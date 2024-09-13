@@ -1,0 +1,104 @@
+
+body {
+    background-color: white; 
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align from the top */
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    padding-top: 50px; /* Reduced padding-top */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+    position: relative;
+}
+
+h1 {
+    color: #ff69b4; 
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    visibility: visible !important; /* Ensure it's visible */
+    text-align: center;
+}
+
+p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between; /* Align images horizontally */
+    margin-top: 20px;
+}
+
+.image-container img {
+    border-radius: 10px;
+    width: 45%; /* Adjust width for both images to fit */
+}
+
+.gift-section {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.gift-section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff1493;
+}
+
+#poem-container {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        padding-top: 30px; /* Adjust padding-top for mobile screens */
+    }
+    
+    h1 {
+        font-size: 2em; /* Adjust the title size for mobile */
+    }
+    
+    p {
+        font-size: 1em;
+    }
+    
+    .image-container {
+        flex-direction: column; /* Stack images vertically on smaller screens */
+    }
+    
+    .image-container img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    button {
+        font-size: 1em;
+    }
+}
